@@ -139,10 +139,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .head-sec-2{
   grid-area: head-sec-2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem;
+  gap: 2rem;
 }
 
 .head-sec-3{
   grid-area: head-sec-3;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .head-sec-4{
@@ -150,11 +157,47 @@ h1, h2, h3, h4, h5, h6 {
   
 }
 
+#searchbar{
+  display: flex;
+}
+
 #searchbar > input[type="search"]{
   width: 100%;
   border: none;
   border-radius: 15px;
   background-color: #dadada;
+}
+
+#search-icon img{
+  height: 2rem;
+  flex-grow: 0;
+}
+
+#notification-icon img{
+  height: 2rem;
+}
+
+.user-pic{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  
+}
+
+.user-pic img{
+  border-radius: 50%;
+  height: 5rem;
+}
+
+.head-sec-3 p{
+  font-size: 2rem;
+}
+
+.head-sec-3 img{
+  height: 12rem;
+  border-radius: 50%;
+  padding: 1rem;
+  margin-right: 0;
 }
 
 .head-btns{
@@ -222,6 +265,22 @@ h1, h2, h3, h4, h5, h6 {
 .pr-btns button{
   border: none;
   background-color: #ffffff00;
+  height: 2rem;
+  width: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.add-fav{
+  background-image: url(svg/star-plus-outline.svg);
+}
+
+.eye-plus{
+  background-image: url(svg/eye-plus-outline.svg);
+}
+
+.share{
+  background-image: url(svg/share-variant-outline.svg);
 }
 
 .sidecol{
@@ -262,6 +321,16 @@ h1, h2, h3, h4, h5, h6 {
  display: grid;
  gap: 1rem;
  box-shadow: 0 0.5rem 10px 0px #00000010;
+}
+
+.trends img{
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.trends{
+  display: flex;
+  gap: 1rem;
 }
 
 .user-pr, .ann-prev{
